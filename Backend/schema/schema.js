@@ -41,5 +41,5 @@ const AuthorSchema = sequelize.define(
     timestamps: false,
   }
 );
-// sequelize.sync(() => console.log("model sync successfully"));
+AuthorSchema.sync({ force: true });
 module.exports = AuthorSchema;
